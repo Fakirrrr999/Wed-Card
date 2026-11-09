@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation | Asif & Rimsha</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Guest Registration Screen -->
+    <section id="registrationScreen" class="registration-screen">
+
+        <div class="registration-card">
+
+            <div class="small-flower">❀</div>
+
+            <p class="arabic-small">
+                بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+            </p>
+
+            <h1>You're Invited!</h1>
+
+            <p class="registration-description">
+                Please enter your details to open your wedding invitation.
+            </p>
+
+            <form id="guestForm">
+
+                <input
+                    type="text"
+                    id="guestName"
+                    placeholder="Enter Your Full Name"
+                    required
+                    maxlength="100"
+                >
+
+                <input
+                    type="tel"
+                    id="guestPhone"
+                    placeholder="Enter Your Phone Number"
+                    required
+                    maxlength="20"
+                >
+
+                <label class="consent">
+                    <input type="checkbox" id="guestConsent" required>
+                    <span>
+                        I agree to share my name and phone number
+                        with the hosts for wedding guest registration.
+                    </span>
+                </label>
+
+                <button type="submit" id="submitBtn">
+                    Open Invitation
+                </button>
+
+                <p id="formMessage"></p>
+
+            </form>
+
+            <p class="privacy-note">
+                Your information will be used for wedding guest registration.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Main Wedding Invitation -->
+    <main id="invitation" class="invitation hidden">
+
+        <div class="invitation-border">
+
+            <div class="corner corner-top-left">❀</div>
+            <div class="corner corner-top-right">❀</div>
+
+            <div class="content">
+
+                <!-- Bismillah -->
+                <p class="bismillah">
+                    بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+                </p>
+
+                <div class="divider">
+                    ✦ ━━━━━━━━━ ✦
+                </div>
+
+                <!-- Invitation Heading -->
+                <p class="invitation-text">
+                    You Are Invited To The Marriage Ceremony Of
+                    Beloved Son Of
+                </p>
+
+                <h2 class="parents-name">
+                    Mr. &amp; Mrs. Arif Siddiqui
+                </h2>
+
+                <div class="ornament">❧</div>
+
+                <!-- Bride and Groom -->
+                <p class="celebration-text">
+                    Together With Their Families
+                </p>
+
+                <h1 class="groom-name">
+                    Muhammad Asif Siddiqui
+                </h1>
+
+                <p class="weds">Weds</p>
+
+                <h1 class="bride-name">
+                    Rimsha Siddiqui
+                </h1>
+
+                <div class="divider">
+                    ✦ ━━━━━━━━━ ✦
+                </div>
+
+                <p class="event-heading">
+                    SAVE THE DATE
+                </p>
+
+                <!-- Three Event Boxes -->
+                <div class="event-details">
+
+                    <div class="detail-box">
+                        <span class="detail-icon">❀</span>
+                        <h3>DATE</h3>
+                        <p>26 March 2027</p>
+                    </div>
+
+                    <div class="detail-box">
+                        <span class="detail-icon">◷</span>
+                        <h3>GUEST ARRIVAL</h3>
+                        <p>8:00 PM</p>
+                    </div>
+
+                    <div class="detail-box">
+                        <span class="detail-icon">⌖</span>
+                        <h3>VENUE</h3>
+                        <p>To Be Announced</p>
+                    </div>
+
+                </div>
+
+                <div class="bottom-message">
+                    <p>
+                        Your Presence Will Make Our Celebration
+                        Even More Special.
+                    </p>
+
+                    <p class="thank-you">
+                        With Love &amp; Best Wishes
+                    </p>
+
+                    <div class="bottom-flower">❀</div>
+                </div>
+
+            </div>
+
+            <div class="corner corner-bottom-left">❀</div>
+            <div class="corner corner-bottom-right">❀</div>
+
+        </div>
+
+    </main>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>

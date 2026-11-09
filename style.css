@@ -1,0 +1,386 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4eee2;
+    color: #55412b;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Registration Screen */
+
+.registration-screen {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background:
+        radial-gradient(circle at top, #fff9ed, transparent 60%),
+        #eee3d1;
+}
+
+.registration-card {
+    background: #fffdf7;
+    width: 100%;
+    max-width: 440px;
+    padding: 45px 30px;
+    text-align: center;
+    border: 2px solid #c7a45b;
+    outline: 5px solid #fffdf7;
+    box-shadow: 0 15px 45px rgba(91, 65, 31, 0.15);
+}
+
+.small-flower {
+    color: #bd9950;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.arabic-small {
+    font-family: 'Amiri', serif;
+    font-size: 27px;
+    color: #9b773b;
+}
+
+.registration-card h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+    color: #88652f;
+    margin: 15px 0;
+}
+
+.registration-description {
+    color: #81715d;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+#guestForm input[type="text"],
+#guestForm input[type="tel"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #d7c49e;
+    background: #fffdf8;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+#guestForm input:focus {
+    border-color: #a77c35;
+}
+
+.consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    text-align: left;
+    color: #786a57;
+    font-size: 11px;
+    line-height: 1.6;
+    margin: 5px 0 20px;
+}
+
+.consent input {
+    margin-top: 3px;
+}
+
+#submitBtn {
+    width: 100%;
+    background: #99733c;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#submitBtn:hover {
+    background: #715126;
+}
+
+#submitBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#formMessage {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.privacy-note {
+    margin-top: 20px;
+    color: #9b8b75;
+    font-size: 10px;
+}
+
+/* Main Invitation */
+
+.hidden {
+    display: none !important;
+}
+
+.invitation {
+    min-height: 100vh;
+    padding: 35px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1.5s ease;
+}
+
+.invitation-border {
+    position: relative;
+    background: #fffdf7;
+    width: 100%;
+    max-width: 850px;
+    padding: 18px;
+    border: 2px solid #b99756;
+    box-shadow: 0 15px 50px rgba(78, 58, 29, 0.15);
+}
+
+.invitation-border::before {
+    content: "";
+    position: absolute;
+    inset: 8px;
+    border: 1px solid #d6bf8c;
+    pointer-events: none;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 45px 25px;
+    text-align: center;
+}
+
+.corner {
+    position: absolute;
+    z-index: 2;
+    color: #bd9950;
+    font-size: 35px;
+}
+
+.corner-top-left {
+    top: 10px;
+    left: 12px;
+}
+
+.corner-top-right {
+    top: 10px;
+    right: 12px;
+}
+
+.corner-bottom-left {
+    bottom: 10px;
+    left: 12px;
+}
+
+.corner-bottom-right {
+    bottom: 10px;
+    right: 12px;
+}
+
+/* Arabic Calligraphy */
+
+.bismillah {
+    font-family: 'Amiri', serif;
+    font-size: clamp(30px, 5vw, 48px);
+    color: #99713a;
+    margin-bottom: 20px;
+}
+
+/* Dividers */
+
+.divider {
+    color: #bd9950;
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+/* Invitation Text */
+
+.invitation-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    line-height: 1.5;
+    color: #66543a;
+    max-width: 600px;
+    margin: 0 auto 15px;
+}
+
+.parents-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 34px;
+    font-weight: 600;
+    color: #94713e;
+}
+
+.ornament {
+    font-size: 35px;
+    color: #bd9950;
+    margin: 15px 0;
+}
+
+.celebration-text {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #8c795d;
+    margin-bottom: 20px;
+}
+
+/* Couple Names */
+
+.groom-name,
+.bride-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(34px, 6vw, 55px);
+    font-weight: 600;
+    color: #99713a;
+    line-height: 1.2;
+}
+
+.weds {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-style: italic;
+    color: #b18a4a;
+    margin: 12px 0;
+}
+
+/* Event Details */
+
+.event-heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    letter-spacing: 4px;
+    color: #99713a;
+    margin: 25px 0;
+}
+
+.event-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 25px auto;
+    max-width: 650px;
+}
+
+.detail-box {
+    border: 1px solid #c5a76d;
+    background: #fffaf0;
+    padding: 22px 10px;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-icon {
+    font-size: 23px;
+    color: #b38c4d;
+    margin-bottom: 10px;
+}
+
+.detail-box h3 {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #99713a;
+    margin-bottom: 10px;
+}
+
+.detail-box p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #5d4b31;
+}
+
+/* Bottom Message */
+
+.bottom-message {
+    margin-top: 35px;
+}
+
+.bottom-message p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    color: #756044;
+}
+
+.bottom-message .thank-you {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 15px;
+    color: #a17c43;
+}
+
+.bottom-flower {
+    font-size: 32px;
+    color: #bd9950;
+    margin-top: 15px;
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+
+    .invitation {
+        padding: 15px 8px;
+    }
+
+    .invitation-border {
+        padding: 12px;
+    }
+
+    .content {
+        padding: 40px 15px;
+    }
+
+    .invitation-text {
+        font-size: 21px;
+    }
+
+    .parents-name {
+        font-size: 29px;
+    }
+
+    .event-details {
+        grid-template-columns: 1fr;
+        max-width: 260px;
+    }
+
+    .detail-box {
+        min-height: 110px;
+    }
+
+    .registration-card {
+        padding: 35px 20px;
+    }
+}
